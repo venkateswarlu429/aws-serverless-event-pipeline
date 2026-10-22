@@ -1,0 +1,12 @@
+# Copy to dev.tfvars (git-ignored) and adjust. Never put account IDs,
+# secrets, or real email addresses you are not happy to share in this file.
+project     = "event-pipeline"
+environment = "dev"
+aws_region  = "us-east-1"
+
+log_retention_days     = 30
+lambda_timeout_seconds = 60
+sqs_max_receive_count  = 3
+processor_batch_size   = 10
+
+# alarm_email = "you@example.com"
